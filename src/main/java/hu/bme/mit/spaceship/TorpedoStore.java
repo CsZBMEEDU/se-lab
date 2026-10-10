@@ -12,6 +12,7 @@ public class TorpedoStore {
   // rate of failing to fire torpedos [0.0, 1.0]
   private double FAILURE_RATE = 0.0; //NOSONAR
 
+  // Nem példányosodik minden methódus hívások, illetve a final segítségével a referencia nem változhat meg.
   private final Random generator = new Random();
 
   private int torpedoCount = 0;
